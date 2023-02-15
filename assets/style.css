@@ -18,6 +18,7 @@ border: 0;
 font-size: 100%;
 font: inherit;
 vertical-align: baseline;
+scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -66,7 +67,7 @@ border-spacing: 0;
     font-family: 'Rouge Script', cursive;
     text-align: center;
     margin-top: 70px;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #fff;
 }
 
@@ -78,7 +79,6 @@ border-spacing: 0;
 
 .tanggal .lokasi {
     text-align: center;
-    margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1.3rem;
@@ -86,7 +86,6 @@ border-spacing: 0;
 
 .tanggal .gedung {
     text-align: center;
-    margin-top: 20px;
     font-size: 1.3rem;
 }
 
@@ -127,7 +126,7 @@ border-spacing: 0;
     display: flex;
     list-style: none;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 
 .nav ul li a {
@@ -137,7 +136,12 @@ border-spacing: 0;
 }
 
 .nav ul li a:hover {
-    color: #000;
+    color: rgb(207, 168, 145);
+}
+
+.s2 {
+    background-color: rgba(207, 168, 145, .6);
+    padding: 50px 0;
 }
 
 .wrapbismillah {
@@ -158,7 +162,7 @@ border-spacing: 0;
 
 .pengantar p {
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .mudamala {
@@ -167,13 +171,14 @@ border-spacing: 0;
 }
 
 .mudamala p {
+    font-family: 'Rouge Script', cursive;
+    font-size: 3.2rem;
     text-align: center;
-    margin-top: 50px;
-    font-size: 3rem;
+    margin: 30px 0;
 }
 
 #sectionWaktu {
-    background-color: rgba(250, 128, 14, 0.6);
+    background-color: rgba(105, 191, 100, 0.808);
     margin: auto;
     padding: 50px 0;
 }
@@ -182,6 +187,17 @@ border-spacing: 0;
     font-size: 2rem;
     text-align: center;
     margin: 30px 0;
+}
+
+.kartu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 0 100px;
 }
 
 .tombol {
@@ -197,17 +213,17 @@ border-spacing: 0;
     border: 1px solid white;
     border-radius: 8px;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: rgb(0, 0, 0);
     margin-top: 30px;
 }
 
 .btnmd:hover {
-    background-color: rgb(253, 186, 40);
+    background-color: rgb(207, 168, 145);
 }
 
 #sectionLokasi {
-    background-color: lightgreen;
+    background-color: rgba(207, 168, 145, .6);
     margin: auto;
     padding: 50px 0;
 }
@@ -225,7 +241,14 @@ border-spacing: 0;
 }
 
 #tentangmm {
-    background-color: lightblue;
+    background-color: rgba(105, 191, 100, 0.808);
+    background-image: url('bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
     margin: auto;
     padding: 50px 0;
 }
@@ -237,7 +260,7 @@ border-spacing: 0;
 }
 
 #ucapan {
-    background-color: lightseagreen;
+    background-color: rgba(207, 168, 145, .6);
     margin: auto;
     padding: 50px 0;
 }
@@ -246,6 +269,47 @@ border-spacing: 0;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px
+}
+
+.formulir {
+    text-align: center;
+}
+
+.lnama {
+    margin: 30px 0 3px 0;
+    font-size: 1.5rem;
+}
+
+.fnama input{
+    display: inline-block;
+    margin: 0 0 15px 0;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 350px;
+    height: 40px;
+}
+
+.fnama input[type="text"]:focus {
+    outline: none;
+}
+
+.lucapan {
+    margin: 30px 0 3px 0;
+    font-size: 1.5rem;
+}
+
+.fucapan textarea {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 350px;
+    resize: none;
+    margin-bottom: 50px;
 }
 
 #footer {
@@ -259,4 +323,81 @@ border-spacing: 0;
 #footer .copyright {
     text-align: center;
     font-size: 1rem;
+}
+
+
+/* Tampilan Responsive */
+@media screen and (max-width: 576px) {
+
+    .undangan {
+        text-align: center;
+        padding-top: 5vh;
+        font-size: 1.3rem;
+    }
+    
+    .pengantin {
+        font-family: 'Rouge Script', cursive;
+        text-align: center;
+        margin-top: 70px;
+        font-size: 3.5rem;
+        color: #fff;
+    }
+    
+    .tanggal {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    
+    .tanggal .lokasi {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    
+    .tanggal .gedung {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    
+    .kpd {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 10px;
+        font-size: .9rem;
+    }
+    
+    .cardname {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cardname .tamu {
+        background-color: rgba(255, 255, 255, .3);
+        padding: 50px;
+        text-align: center;
+        font-size: 1.3rem;
+        border-radius: 15px;
+        border: 1px solid black;
+        color: #000;
+    }
+
+    .nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 80%;
+    }
 }
