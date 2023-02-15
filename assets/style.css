@@ -104,7 +104,7 @@ border-spacing: 0;
 }
 
 .cardname .tamu {
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .3);
     padding: 50px;
     text-align: center;
     font-size: 1.3rem;
@@ -120,6 +120,7 @@ border-spacing: 0;
     color: rgb(255, 255, 255);
     height: 70px;
     align-items: center;
+    
 }
 
 .nav ul {
@@ -130,14 +131,14 @@ border-spacing: 0;
 }
 
 .nav ul li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 1.3rem;
 
 }
 
 .nav ul li a:hover {
-    color: darkgrey;
+    color: #000;
 }
 
 .wrapbismillah {
