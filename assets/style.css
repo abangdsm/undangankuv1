@@ -60,13 +60,13 @@ border-spacing: 0;
 .undangan {
     text-align: center;
     font-size: 1.3rem;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .pengantin {
     font-family: 'Rouge Script', cursive;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 5rem;
     color: #fff;
 }
@@ -94,39 +94,89 @@ small {
     margin-right: 10px;
 }
 
-.tanggal .fw {
+.flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower .fw {
     width: 110px;
     height: 150px;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
+    left: 45%;
     transform: rotate(-45deg);
 }
 
 .nav {
     display: flex;
-    background-color: rgba(105, 191, 100, 0.808);
+    background-color: rgba(105, 191, 100, 1);
+    /* background-color: rgb(255, 255, 255); */
     justify-content: space-around;
-    color: rgb(255, 255, 255);
+    color: #000;
     height: 70px;
     align-items: center;
-
 }
 
 .nav ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    align-items: center;
     width: 60%;
+    z-index: 2;
+}
+
+.nav ul li {
+    text-align: center;
 }
 
 .nav ul li a {
-    color: #fff;
+    display: inline-block;
+    color: #000;
     text-decoration: none;
     font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
 .nav ul li a:hover {
     color: rgb(207, 168, 145);
+}
+
+#arrum {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.ayat {
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.ayat p{
+    text-align: center;
+    line-height: 2rem;
+}
+
+.foto-nikah {
+    margin: 0 150px;
+}
+
+.ftnikah {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.garis-bawah {
+    border-bottom: 3px solid goldenrod;
+    right: 0;
+    left: 0;
 }
 
 .s2 {
@@ -142,7 +192,7 @@ small {
 
 .bismillah {
     max-width: 300px;
-    margin: 50px 0 50px 0;
+    margin: 04px 0 40px 0;
 }
 
 .pengantar {
@@ -168,7 +218,8 @@ small {
 }
 
 #sectionWaktu {
-    background-color: rgba(105, 191, 100, 0.808);
+    /* background-color: rgba(105, 191, 100, 0.808); */
+    background-color: rgbb(255, 255, 255);
     margin: auto;
     padding: 50px 0;
 }
@@ -206,14 +257,16 @@ small {
     font-size: 1rem;
     color: rgb(0, 0, 0);
     margin-top: 30px;
+    border: 1px solid black;
 }
 
 .btnmd:hover {
-    background-color: rgb(207, 168, 145);
+    background-color: goldenrod;
 }
 
 #sectionLokasi {
-    background-color: rgba(207, 168, 145, .6);
+    /* background-color: rgba(207, 168, 145, .6); */
+    background-color: rgb(255, 255, 255);
     margin: auto;
     padding: 50px 0;
 }
@@ -250,7 +303,7 @@ small {
 }
 
 #ucapan {
-    background-color: rgba(207, 168, 145, .6);
+    background-color: rgba(255, 215, 0, .8);
     margin: auto;
     padding: 50px 0;
 }
@@ -360,7 +413,7 @@ small {
         margin-right: 10px;
     }
 
-    .tanggal .fw {
+    .flower .fw {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -368,11 +421,32 @@ small {
         height: 140px;
         position: absolute;
         bottom: -60px;
-        right: 150px;
+        left: 38%;
         transform: rotate(-45deg);
     }
 
     .nav {
         display: none;
+    }
+
+    #arrum {
+        flex-direction: column;
+    }
+
+    .foto-nikah {
+        margin: 30px 10px 0 10px;
+    }
+
+    .ayat {
+        margin: 30px;
+    }
+
+    .gmaps {
+        margin: 20px;
+        border: 1px solid black;
+    }
+
+    .copyright{
+        font-size: .5rem;
     }
 }
