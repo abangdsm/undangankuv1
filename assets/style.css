@@ -130,7 +130,7 @@ small {
 }
 
 .s2 {
-    background-color: rgb(92, 78, 76);
+    background-color: rgb(255, 255, 255);
     padding: 50px 0;
 }
 
@@ -367,7 +367,7 @@ small {
         width: 100px;
         height: 140px;
         position: absolute;
-        bottom: -65px;
+        bottom: -60px;
         right: 150px;
         transform: rotate(-45deg);
     }
