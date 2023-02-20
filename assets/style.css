@@ -111,8 +111,9 @@ small {
 
 .nav {
     display: flex;
-    background-color: rgba(105, 191, 100, 1);
+    /* background-color: rgba(105, 191, 100, 1); */
     /* background-color: rgb(255, 255, 255); */
+    background-color: goldenrod;
     justify-content: space-around;
     color: #000;
     height: 70px;
@@ -137,11 +138,14 @@ small {
     color: #000;
     text-decoration: none;
     font-size: 1.3rem;
-    margin-bottom: 10px;
 }
 
 .nav ul li a:hover {
-    color: rgb(207, 168, 145);
+    color: rgb(255, 255, 255);
+}
+
+.lbutton {
+    margin-top: 5px;
 }
 
 #arrum {
@@ -249,19 +253,19 @@ small {
 
 .btnmd {
     text-decoration: none;
-    background-color: #fff;
+    background-color: goldenrod;
     padding: 20px;
     border: 1px solid white;
     border-radius: 8px;
     font-weight: bold;
     font-size: 1rem;
-    color: rgb(0, 0, 0);
+    color: #000;
     margin-top: 30px;
-    border: 1px solid black;
 }
 
 .btnmd:hover {
-    background-color: goldenrod;
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 #sectionLokasi {
@@ -281,6 +285,10 @@ small {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.gmaps iframe{
+    border-radius: 10px;
 }
 
 #tentangmm {
@@ -303,7 +311,8 @@ small {
 }
 
 #ucapan {
-    background-color: rgba(255, 215, 0, .8);
+    /* background-color: rgba(255, 215, 0, .8); */
+    background-color: rgb(255, 255, 255);
     margin: auto;
     padding: 50px 0;
 }
@@ -319,7 +328,7 @@ small {
 }
 
 .lnama {
-    margin: 30px 0 3px 0;
+    margin: 50px 0 3px 0;
     font-size: 1.5rem;
 }
 
@@ -330,7 +339,7 @@ small {
     padding: 0 10px;
     border-radius: 8px;
     outline: none;
-    border: none;
+    border: 1px solid black;
     text-align: left;
     width: 350px;
     height: 40px;
@@ -341,7 +350,7 @@ small {
 }
 
 .lucapan {
-    margin: 30px 0 3px 0;
+    margin: 10px 0 3px 0;
     font-size: 1.5rem;
 }
 
@@ -350,7 +359,7 @@ small {
     font-size: 1.5rem;
     border-radius: 8px;
     outline: none;
-    border: none;
+    border: 1px solid black;
     width: 350px;
     resize: none;
     margin-bottom: 50px;
