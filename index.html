@@ -8,6 +8,9 @@
     <title>Undangan Resepsi Pernikahan Muda & Mala</title>
     <link rel="stylesheet" href="assets/style.css">
 
+    <!-- icon -->
+    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +20,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- jquery -->
+    <script src="assets/jquery.js"></script>
 
 </head>
 
@@ -152,7 +157,7 @@
 
 
         <div class="tombol">
-            <a href="#" class="btnmd"><i class="fa-solid fa-calendar-days"></i> Google Calendar</a>
+            <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MjM0dmliZmwyanYxbHBnZzNrNGc1YTM2MjIgaWQucmV2ZXJzYWxAbQ&tmsrc=id.reversal%40gmail.com" target="_blank" class="btnmd"><i class="fa-solid fa-calendar-days"></i> Google Calendar</a>
         </div>
     </div>
     <div class="garis-bawah"></div>
@@ -166,7 +171,7 @@
         </div>
 
         <div class="tombol">
-            <a href="#" class="btnmd"><i class="fa fa-location-dot"></i> Buka Google Maps</a>
+            <a href="https://www.google.com/maps/place/Wisma+Tanjung+Indah/@3.518461,98.789559,17z/data=!4m6!3m5!1s0x303139b57406ae95:0xed5434408264a54e!8m2!3d3.5184606!4d98.7895589!16s%2Fg%2F11cm0g52q0?hl=id" target="_blanks" class="btnmd"><i class="fa fa-location-dot"></i> Buka Google Maps</a>
         </div>
     </div>
 
@@ -182,12 +187,12 @@
         </div>
 
         <div class="formulir">
-            <form action="">
+            <form action="" method="POST">
                 <div class="lnama">
                     <label for="nama">Nama Lengkap</label>
                 </div>
                 <div class="fnama">
-                    <input type="text" name="nama" id="nama" placeholder="Nama Anda"><br>
+                    <input type="text" name="nama" id="nama" class="nama_lengkap" placeholder="Nama Anda"><br>
                 </div>
 
                 <div class="lucapan">
@@ -195,12 +200,18 @@
                 </div>
 
                 <div class="fucapan">
-                    <textarea name="cakap" id="cakap" cols="10" rows="5" placeholder="Ucapan & Doa"></textarea>
+                    <textarea name="cakap" id="cakap" class="ucapan" cols="10" rows="5" placeholder="Ucapan & Doa"></textarea>
                 </div>
 
-                <a href="#" type="submit" id="kirim" class="btnmd"><i class="fa fa-comments"></i> Kirim Ucapan</a>
+                <button id="kirim" class="btnmd"><i class="fa fa-comments"></i> Kirim Ucapan</button>
 
             </form>
+
+            <div class="theysays">
+                <p class="katamereka">
+
+                </p>
+            </div>
         </div>
 
     </div>
@@ -211,7 +222,9 @@
         </div>
     </div>
 
+    
     <script src="assets/script.js"></script>
+    <script src="assets/tools.js"></script>
 </body>
 
 </html>
