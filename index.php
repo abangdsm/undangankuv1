@@ -1,4 +1,5 @@
 <?php
+include 'hub.php';
 require 'addData.php';
 if (isset($_POST["btn-kirim"])) {
     if (add($_POST) > 0) {
