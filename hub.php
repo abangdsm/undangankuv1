@@ -1,5 +1,13 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'ucapan');
-if (mysqli_connect_errno()) {
-    echo "Database Gagal Terhubung" . mysqli_connect_error();
+$conn = mysqli_connect("localhost", "root", "", "ucapan");
+
+function query($data)
+{
+    global $conn;
+    $hasil = mysqli_query($conn, $data);
+    $rows = [];
+    while ($row = mysqli_fetch_assoc($hasil)) {
+        $rows[] = $row;
+    }
+    return $rows;
 }

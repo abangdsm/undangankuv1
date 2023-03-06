@@ -260,7 +260,7 @@ small {
     font-weight: bold;
     font-size: 1rem;
     color: #000;
-    margin-top: 30px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
@@ -321,7 +321,7 @@ small {
 #ucapan .komentar {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .formulir {

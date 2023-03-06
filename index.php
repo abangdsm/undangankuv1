@@ -1,3 +1,13 @@
+<?php
+require 'addData.php';
+if (isset($_POST["btn-kirim"])) {
+    if (add($_POST) > 0) {
+        header('location: #ucapan');
+    } else {
+        echo "<script>alert('Yaah, ucapan dari Anda tidak dapat terkirim');</script>";
+    }
+}; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +18,7 @@
     <title>Undangan Resepsi Pernikahan Muda & Mala</title>
     <link rel="stylesheet" href="assets/style.css">
 
-    <!-- icon -->
+    <!-- icon dengan foto terbaru -->
     <!-- <link href="assets/img/favicon.png" rel="icon"> -->
 
     <!-- Google Font -->
@@ -19,9 +29,6 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- jquery -->
-    <script src="assets/jquery.js"></script>
 
 </head>
 
@@ -187,7 +194,7 @@
         </div>
 
         <div class="formulir">
-            <form action="" method="POST">
+            <form method="POST">
                 <div class="lnama">
                     <label for="nama">Nama Lengkap</label>
                 </div>
@@ -203,18 +210,17 @@
                     <textarea name="cakap" id="cakap" class="ucapan" cols="10" rows="5" placeholder="Ucapan & Doa"></textarea>
                 </div>
 
-                <button id="kirim" class="btnmd"><i class="fa fa-comments"></i> Kirim Ucapan</button>
+                <button class="btnmd" name="btn-kirim"><i class="fa fa-comments"></i> Kirim Ucapan</button>
 
             </form>
+        </div>
 
-            <div class="theysays">
-                <p class="katamereka">
-
-                </p>
-            </div>
+        <div onload="table()">
+            <div id="jlegek"></div>
         </div>
 
     </div>
+
 
     <div id="footer">
         <div class="copyright">
@@ -222,9 +228,7 @@
         </div>
     </div>
 
-    
-    <script src="assets/script.js"></script>
-    <script src="assets/tools.js"></script>
+    <script type="text/javascript" src="assets/tools.js"></script>
 </body>
 
 </html>
