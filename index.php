@@ -84,9 +84,9 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
                 </div>
             </div>
 
-            <div class="flower">
+            <!-- <div class="flower">
                 <img class="fw" src="assets/euc.png" alt="flower-white">
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -170,7 +170,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
     </div>
 
     <div id="profile1" data-aos="fade-up" data-aos-duration="2000">
-        <img src="assets/prof1.jpg" alt="dwistarmuda" class="pfl" data-aos="zoom-in" data-aos-duration="2000">
+        <img src="assets/profile-dsm.jpg" alt="dwistarmuda" class="pfl" data-aos="zoom-in" data-aos-duration="2000">
         <p>Dwi Star Muda Al Achmad</p>
         <p>Putra Pertama Dari:</p>
         <p>Bapak Achmad dan Ibu Setiawati</p>
@@ -188,7 +188,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
     <div class="garis-bawah"></div>
 
     <div id="sectionWaktu">
-        <p data-aos="fade-up" data-aos-duration="2000">Our Love Story</p>
+        <p class="title" data-aos="fade-up" data-aos-duration="2000">Our Love Story</p>
 
         <div class="story" data-aos="fade-up" data-aos-duration="2000">
             <p class="time">Maret 2007</p>
@@ -220,7 +220,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
         <div class="garis-bawah"></div>
 
-        <p data-aos="fade-up" data-aos-duration="2000">Wedding Event</p>
+        <p class="title" data-aos="fade-up" data-aos-duration="2000">Wedding Event</p>
 
         <div class="kartu" data-aos="fade-up" data-aos-duration="2000">
             <div class="card">
@@ -243,7 +243,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
     <div id="sectionLokasi">
         <div class="judul">
-            <p data-aos="fade-up" data-aos-duration="2000">Denah Lokasi Pesta</p>
+            <p class="title" data-aos="fade-up" data-aos-duration="2000">Denah Lokasi Pesta</p>
         </div>
         <div class="gmaps" data-aos="fade-up" data-aos-duration="2000">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.297796677385!2d98.7888400644867!3d3.5184659517543952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303139b57406ae95%3A0xed5434408264a54e!2sWisma%20Tanjung%20Indah!5e0!3m2!1sid!2sid!4v1676137436032!5m2!1sid!2sid" width="1100" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -258,7 +258,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
     <div id="tentangmm">
         <div class="tentang" data-aos="fade-up" data-aos-duration="2000">
-            <p>Gallery Our Moment</p>
+            <p class="title">Gallery Our Moment</p>
         </div>
 
         <div class="fotos" data-aos="fade-up" data-aos-duration="2000">
@@ -314,7 +314,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
     <div id="ucapan">
         <div class="komentar" data-aos="fade-up" data-aos-duration="2000">
-            <p>Ucapan & Doa</p>
+            <p class="title">Ucapan & Doa</p>
         </div>
 
         <div class="formulir" data-aos="fade-up" data-aos-duration="2000">

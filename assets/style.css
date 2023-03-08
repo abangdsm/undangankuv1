@@ -290,7 +290,7 @@ small {
 }
 
 #sectionWaktu p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     text-align: center;
     margin: 30px 0;
 }
@@ -306,6 +306,12 @@ small {
 #sectionWaktu .story p {
     margin: 0 150px 50px 150px;
     font-size: 1rem;
+}
+
+.title {
+    font-family: 'Rouge Script', cursive;
+    font-size: 3.2rem;
+    text-align: center;
 }
 
 .kartu {
@@ -407,6 +413,8 @@ small {
 }
 
 .wg {
+    font-family: 'Rouge Script', cursive;
+    text-align: center;
     margin-bottom: 50px;
     font-size: 2rem;
 }
