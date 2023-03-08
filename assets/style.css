@@ -47,8 +47,8 @@ border-spacing: 0;
 
 
 .prlx1 {
-    background-image: url('bg3.jpg');
-    background-size: cover;
+    background-image: url('cover.jpg');
+    background-size: cover; 
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -497,6 +497,15 @@ small {
     .gmaps {
         margin: 20px;
         border: 1px solid black;
+    }
+
+    #list-ucapan {
+        background-color: lightgray;
+        margin: 10px;
+        height: 400px;
+        border-radius: 10px;
+        padding-top: 10px;
+        overflow: auto;
     }
 
     .copyright{

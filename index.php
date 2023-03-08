@@ -53,7 +53,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
                 <p>Muda <br> & <br>Mala</p>
             </div>
 
-            <div class="tanggal" data-aos="fade-up" data-aos-duration="2000">
+            <div class="tanggal" data-aos="fade-up" data-aos-duration="3000">
                 <div class="col-tanggal">
                     <p>Ahad</p>
                 </div>
@@ -112,7 +112,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
     <div id="arrum">
 
         <div class="foto-nikah">
-            <img class="ftnikah" src="assets/bg3.jpg" alt="foto-nikah" data-aos="fade-up" data-aos-duration="2000">
+            <img class="ftnikah" src="assets/kutipan1.jpg" alt="foto-nikah" data-aos="fade-up" data-aos-duration="2000">
         </div>
 
         <div class="ayat" data-aos="fade-up" data-aos-duration="2000">
