@@ -45,7 +45,6 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
-
 .prlx1 {
     background-image: url('cover.jpg');
     background-size: cover; 
@@ -87,7 +86,7 @@ small {
     font-size: 1.2rem;
 }
 
-.tanggal .garis {
+.garis {
     border-left: 2px solid #fff;
     height: 60px;
     margin-left: 10px;
@@ -148,6 +147,30 @@ small {
     margin-top: 5px;
 }
 
+.napeng {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.napeng .inisial {
+    font-family: 'Rouge Script', cursive;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 5rem;
+    color: #000;
+}
+
+.ga-napeng {
+    border-left: 2px solid #000;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #arrum {
     display: flex;
     justify-content: center;
@@ -156,7 +179,8 @@ small {
 }
 
 .ayat {
-    margin-right: 150px;
+    margin-right: 50px;
+    margin-left: 100px;
     margin-top: 50px;
 }
 
@@ -166,7 +190,7 @@ small {
 }
 
 .foto-nikah {
-    margin: 0 150px;
+    margin: 0 100px;
 }
 
 .ftnikah {
@@ -221,6 +245,43 @@ small {
     margin: 30px 0;
 }
 
+#profile1 {
+    margin-bottom: 50px;
+    padding-left: 250px;
+}
+
+#profile1 p {
+    line-height: 20px;
+}
+
+.pfl {
+    display: inline-block;
+    width: 320px;
+    height: 370px;
+    border-radius: 10px;
+}
+
+.btn-ig {
+    display: inline-block;
+    margin-top: 9px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    color: #000;
+    padding: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#profile2 {
+    margin-bottom: 50px;
+    padding-right: 250px;
+    text-align: right;
+}
+
+#profile2 p {
+    line-height: 20px;
+}
+
 #sectionWaktu {
     /* background-color: rgba(105, 191, 100, 0.808); */
     background-color: rgbb(255, 255, 255);
@@ -232,6 +293,19 @@ small {
     font-size: 2rem;
     text-align: center;
     margin: 30px 0;
+}
+
+.story {
+    text-align: center;
+}
+
+.story .time {
+    font-weight: bold;
+}
+
+#sectionWaktu .story p {
+    margin: 0 150px 50px 150px;
+    font-size: 1rem;
 }
 
 .kartu {
@@ -293,14 +367,11 @@ small {
 }
 
 #tentangmm {
-    background-color: rgba(105, 191, 100, 0.808);
-    background-image: url('bg3.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
     margin: auto;
     padding: 50px 0;
 }
@@ -309,6 +380,42 @@ small {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+}
+
+.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.fotos .gale {
+    margin: 20px;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+    border: 3px solid goldenrod;
+}
+
+#wedding-gift {
+    text-align: center;
+    margin: 50px
+}
+
+#wedding-gift p {
+    margin: 30px 0;
+}
+
+.wg {
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.rekening {
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    margin: 30px 350px;
+    padding-bottom: 30px;
 }
 
 #ucapan {
@@ -423,28 +530,26 @@ small {
 }
 
 
-/* Tampilan Responsive */
+/* Tampilan Responsive Mobile */
 @media screen and (max-width: 576px) {
 
     .undangan {
-        text-align: right;
+        text-align: center;
         padding-top: 40vh;
-        padding-right: 20px;
         font-size: 1.5rem;
     }
     
     .pengantin {
         font-family: 'Rouge Script', cursive;
-        text-align: right;
+        text-align: center;
         font-size: 4rem;
-        padding-right: 20px;
         margin-top: 30px;
         color: #fff;
     }
     
     .tanggal {
         display: flex;
-        justify-content: right;
+        justify-content: center;
         align-items: center;
         margin-top: 30px;
         margin-right: 20px;
@@ -494,9 +599,43 @@ small {
         margin: 30px;
     }
 
+    #profile1 {
+        padding-left: 0px;
+    }
+
+    #profile2 {
+        padding-right: 0px;
+    }
+
+    #sectionWaktu .story p {
+        margin: 20px;
+        font-size: 1rem;
+    }
+
     .gmaps {
         margin: 20px;
         border: 1px solid black;
+    }
+
+    .fotos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .fotos .gale {
+        margin: 3px;
+        width: 120px;
+        height: 120px;
+        border-radius: 5px;
+    }
+
+    .rekening {
+        border: 1px solid goldenrod;
+        border-radius: 10px;
+        margin: 10px 0;
+        padding-bottom: 30px;
     }
 
     #list-ucapan {

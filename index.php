@@ -19,6 +19,14 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="page" />
+    <meta property="og:title" content="Undangan Resepsi Pernikahan - Muda & Mala." />
+    <meta property="og:description" content="Undangan Resepsi Pernikahan - Muda & Mala." />
+    <meta property="og:url" content="https://letsocio.com" />
+    <meta property="og:image" content="https://letsocio.com/og.jpg" />
+
     <title>Undangan Resepsi Pernikahan Muda & Mala</title>
 
     <!-- Custom CSS -->
@@ -28,7 +36,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- icon dengan foto terbaru -->
-    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+    <link href="assets/favicon.png" rel="icon">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +50,10 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 </head>
 
 <body>
+    <audio hidden autoplay loop>
+        <source src="assets/audio/tulus.mp3" type="audio/mpeg">
+        Yah, browser Anda tidak mendukung audio.
+    </audio>
 
     <div id="home">
         <div class="prlx1">
@@ -98,7 +110,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
             </li>
             <li>
                 <a href="#tentangmm"><i class="fa fa-heart"></i>
-                    <div class="lbutton">Tentang Muda & Mala</div>
+                    <div class="lbutton">Galeri</div>
                 </a>
             </li>
             <li>
@@ -109,17 +121,24 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
         </ul>
     </div>
 
+    <div class="napeng" data-aos="fade-up" data-aos-duration="2000">
+        <p class="inisial">M</p>
+        <div class="ga-napeng"></div>
+        <p class="inisial">M</p>
+    </div>
+
     <div id="arrum">
 
-        <div class="foto-nikah">
-            <img class="ftnikah" src="assets/kutipan1.jpg" alt="foto-nikah" data-aos="fade-up" data-aos-duration="2000">
-        </div>
-
         <div class="ayat" data-aos="fade-up" data-aos-duration="2000">
+
             <p>
                 "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
             </p>
             <p>- Q.S. Ar-Rum ayat 21 -</p>
+        </div>
+
+        <div class="foto-nikah">
+            <img class="ftnikah" src="assets/1.jpg" alt="foto-nikah" data-aos="zoom-in" data-aos-duration="2000">
         </div>
 
     </div>
@@ -148,15 +167,60 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
             <p>Nirmala Sari</p>
         </div>
 
-        <div class="flower">
-            <img class="fw" src="assets/euc.png" alt="flower-white">
-        </div>
-
     </div>
+
+    <div id="profile1" data-aos="fade-up" data-aos-duration="2000">
+        <img src="assets/prof1.jpg" alt="dwistarmuda" class="pfl" data-aos="zoom-in" data-aos-duration="2000">
+        <p>Dwi Star Muda Al Achmad</p>
+        <p>Putra Pertama Dari:</p>
+        <p>Bapak Achmad dan Ibu Setiawati</p>
+        <a href="https://instagram.com/dwistarmuda.id" target="_blank" class="btn-ig"><i class="fab fa-instagram"></i> instagram</a>
+    </div>
+
+    <div id="profile2" data-aos="fade-up" data-aos-duration="2000">
+        <img src="assets/prof2.jpg" alt="dwistarmuda" class="pfl" data-aos="zoom-in" data-aos-duration="2000">
+        <p>Nirmala Sari</p>
+        <p>Putri Pertama Dari:</p>
+        <p>Alm. Bapak Nirwansyah dan Ibu Sulastri</p>
+        <a href="https://instagram.com/itsnirmalasari" target="_blank" class="btn-ig"><i class="fab fa-instagram"></i> instagram</a>
+    </div>
+
     <div class="garis-bawah"></div>
 
     <div id="sectionWaktu">
-        <p data-aos="fade-up" data-aos-duration="2000">Waktu</p>
+        <p data-aos="fade-up" data-aos-duration="2000">Our Love Story</p>
+
+        <div class="story" data-aos="fade-up" data-aos-duration="2000">
+            <p class="time">Maret 2007</p>
+            <p>
+                Awal jumpa ketika berada di kelas 2 SMP. Saling mengenal tetapi masih begitu cuek dengan satu sama lain. Karena saat itu kami masih fokus untuk belajar dan belum mengerti apa itu cinta.
+            </p>
+        </div>
+
+        <div class="story" data-aos="fade-up" data-aos-duration="2000">
+            <p class="time">Agustus 2013</p>
+            <p>
+                Dipertemuan kedua, tanpa disangka kami berjumpa kembali di sebuah angkutan umum. Dan kami saling bertukar nomor handphone. Namun, belum ada tumbuh rasa suka di antara kami.
+            </p>
+        </div>
+
+        <div class="story" data-aos="fade-up" data-aos-duration="2000">
+            <p class="time">Oktober 2019</p>
+            <p>
+                Dipertemuan selanjutnya kami dipertemukan kembali di sebuah cafe yang berada di Center Point Mall Medan. Kami banyak bercerita dan memutuskan untuk bertukar kontak kembali dan saling follow sosial media. Seiring berjalannya waktu rasa suka pun tumbuh di antara kami.
+            </p>
+        </div>
+
+        <div class="story" data-aos="fade-up" data-aos-duration="2000">
+            <p class="time">Juli 2022</p>
+            <p>
+                Setelah cukup mengenal satu sama lain. Akhirnya kami memutuskan untuk membangun keluarga kecil kami pada hari Jum'at 1 Juli 2022. Semoga Allah S.W.T. memberikan kebahagiaan dan keberkahan di keluarga kami. "AMIIN"
+            </p>
+        </div>
+
+        <div class="garis-bawah"></div>
+
+        <p data-aos="fade-up" data-aos-duration="2000">Wedding Event</p>
 
         <div class="kartu" data-aos="fade-up" data-aos-duration="2000">
             <div class="card">
@@ -166,7 +230,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
             <div class="card">
                 <p>Resepsi:</p>
-                <p class="resepsi">Ahad, 12 Maret 2022</p>
+                <p class="resepsi">Ahad, 12 Maret 2023</p>
             </div>
         </div>
 
@@ -190,11 +254,63 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
         </div>
     </div>
 
+    <div class="garis-bawah"></div>
+
     <div id="tentangmm">
         <div class="tentang" data-aos="fade-up" data-aos-duration="2000">
-            <p>Tentang Muda & Mala</p>
+            <p>Gallery Our Moment</p>
+        </div>
+
+        <div class="fotos" data-aos="fade-up" data-aos-duration="2000">
+            <img class="gale" src="assets/gallery/12.jpg" alt="satu">
+            <img class="gale" src="assets/gallery/3.jpg" alt="dua">
+            <img class="gale" src="assets/gallery/2.jpg" alt="tiga">
+        </div>
+
+        <div class="fotos" data-aos="fade-up" data-aos-duration="2000">
+            <img class="gale" src="assets/gallery/6.jpg" alt="dua">
+            <img class="gale" src="assets/gallery/5.jpg" alt="tiga">
+            <img class="gale" src="assets/gallery/7.jpg" alt="satu">
+        </div>
+
+        <div class="fotos" data-aos="fade-up" data-aos-duration="2000">
+            <img class="gale" src="assets/gallery/9.jpg" alt="satu">
+            <img class="gale" src="assets/gallery/8.jpg" alt="dua">
+            <img class="gale" src="assets/gallery/4.jpg" alt="tiga">
+        </div>
+
+        <div class="fotos" data-aos="fade-up" data-aos-duration="2000">
+            <img class="gale" src="assets/gallery/1.jpg" alt="satu">
+            <img class="gale" src="assets/gallery/10.jpg" alt="dua">
+            <img class="gale" src="assets/gallery/11.jpg" alt="tiga">
+        </div>
+
+    </div>
+
+    <div class="garis-bawah"></div>
+
+    <div id="wedding-gift">
+        <p class="wg" data-aos="fade-up" data-aos-duration="2000">Wedding Gift</p>
+        <p data-aos="fade-up" data-aos-duration="2000">
+            Bagi bapak/ibu/saudara/i yang ingin mengirimkan hadiah pernikahan dapat melalui virtual account atau e-wallet di bawah ini:
+        </p>
+
+        <div class="rekening" data-aos="zoom-in" data-aos-duration="2000">
+            <p class="nama-bank">Jenius/BTPN</p>
+            <p class="norek">90160258936</p>
+            <p>a/n DWISTAR MUDA ALACHMAD</p>
+            <!-- <a href="" onclick="salin()" id="norek" class="btn-ig"><i class="fas fa-copy"></i> salin no. rekening</a> -->
+        </div>
+
+        <div class="rekening" data-aos="zoom-in" data-aos-duration="2000">
+            <p class="nama-bank">BRI</p>
+            <p class="norek">338001054599535</p>
+            <p>a/n NIRMALA SARI</p>
+            <!-- <a href="" onclick="salin()" id="norek" class="btn-ig"><i class="fas fa-copy"></i> salin no. rekening</a> -->
         </div>
     </div>
+
+    <div class="garis-bawah"></div>
 
     <div id="ucapan">
         <div class="komentar" data-aos="fade-up" data-aos-duration="2000">
@@ -246,6 +362,14 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        function salin() {
+            document.getElementById("norek").select();
+            document.execCommand("copy");
+            alert("Nomor Rekening Berhasil Disalin Ke Clipboard.");
+        }
     </script>
 </body>
 
