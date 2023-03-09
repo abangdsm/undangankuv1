@@ -22,10 +22,10 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
     <!-- OpenGraph -->
     <meta property="og:type" content="page" />
-    <meta property="og:title" content="Undangan Resepsi Pernikahan - Muda & Mala." />
-    <meta property="og:description" content="Undangan Resepsi Pernikahan - Muda & Mala." />
+    <meta property="og:title" content="Muda & Mala" />
+    <meta property="og:description" content="Wedding Invitation" />
     <meta property="og:url" content="https://letsocio.com" />
-    <meta property="og:image" content="https://letsocio.com/og.jpg" />
+    <meta property="og:image" content="https://letsocio.com/assets/opengraph.jpg" />
 
     <title>Undangan Resepsi Pernikahan Muda & Mala</title>
 
@@ -54,6 +54,15 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
         <source src="assets/audio/tulus.mp3" type="audio/mpeg">
         Yah, browser Anda tidak mendukung audio.
     </audio>
+
+    <!-- Nama Tamu Undangan -->
+    <div class="popup">
+        <div class="pop-content">
+            <img class="halo-undangan" src="assets/1.jpg" alt="muda-mala">
+            <p>Kepada Yth, Bapak/Ibu/Sdra/i</p>
+            <button class="buka-undangan">Buka Undangan</button>
+        </div>
+    </div>
 
     <div id="home">
         <div class="prlx1">
@@ -171,7 +180,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
     <div id="profile1" data-aos="fade-up" data-aos-duration="2000">
         <img src="assets/profile-dsm.jpg" alt="dwistarmuda" class="pfl" data-aos="zoom-in" data-aos-duration="2000">
-        <p>Dwi Star Muda Al Achmad</p>
+        <p class="namanya">Dwi Star Muda Al Achmad</p>
         <p>Putra Pertama Dari:</p>
         <p>Bapak Achmad dan Ibu Setiawati</p>
         <a href="https://instagram.com/dwistarmuda.id" target="_blank" class="btn-ig"><i class="fab fa-instagram"></i> instagram</a>
@@ -179,7 +188,7 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
     <div id="profile2" data-aos="fade-up" data-aos-duration="2000">
         <img src="assets/prof2.jpg" alt="dwistarmuda" class="pfl" data-aos="zoom-in" data-aos-duration="2000">
-        <p>Nirmala Sari</p>
+        <p class="namanya">Nirmala Sari</p>
         <p>Putri Pertama Dari:</p>
         <p>Alm. Bapak Nirwansyah dan Ibu Sulastri</p>
         <a href="https://instagram.com/itsnirmalasari" target="_blank" class="btn-ig"><i class="fab fa-instagram"></i> instagram</a>
@@ -193,28 +202,28 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
         <div class="story" data-aos="fade-up" data-aos-duration="2000">
             <p class="time">Maret 2007</p>
             <p>
-                Awal jumpa ketika berada di kelas 2 SMP. Saling mengenal tetapi masih begitu cuek dengan satu sama lain. Karena saat itu kami masih fokus untuk belajar dan belum mengerti apa itu cinta.
+                Awal berjumpa ketika berada di kelas 2 SMP. Saling mengenal tetapi masih begitu cuek satu sama lain. Karena saat itu masih sekolah dan senang belajar.
             </p>
         </div>
 
         <div class="story" data-aos="fade-up" data-aos-duration="2000">
             <p class="time">Agustus 2013</p>
             <p>
-                Dipertemuan kedua, tanpa disangka kami berjumpa kembali di sebuah angkutan umum. Dan kami saling bertukar nomor handphone. Namun, belum ada tumbuh rasa suka di antara kami.
+                Dipertemukan untuk kedua kalinya. Tanpa disangka kami berjumpa kembali di sebuah angkutan umum. Saling bertukar nomor handphone. Namun, belum ada tumbuh rasa suka di antara kami.
             </p>
         </div>
 
         <div class="story" data-aos="fade-up" data-aos-duration="2000">
             <p class="time">Oktober 2019</p>
             <p>
-                Dipertemuan selanjutnya kami dipertemukan kembali di sebuah cafe yang berada di Center Point Mall Medan. Kami banyak bercerita dan memutuskan untuk bertukar kontak kembali dan saling follow sosial media. Seiring berjalannya waktu rasa suka pun tumbuh di antara kami.
+                Kami dipertemukan kembali di sebuah cafe yang berada di Center Point Mall Medan. Kami banyak bercerita dan saling bertukar kontak dan sosial media. Seiring berjalannya waktu mulai tumbuh benih cinta di antara kami.
             </p>
         </div>
 
         <div class="story" data-aos="fade-up" data-aos-duration="2000">
             <p class="time">Juli 2022</p>
             <p>
-                Setelah cukup mengenal satu sama lain. Akhirnya kami memutuskan untuk membangun keluarga kecil kami pada hari Jum'at 1 Juli 2022. Semoga Allah S.W.T. memberikan kebahagiaan dan keberkahan di keluarga kami. "AMIIN"
+                Setelah cukup mengenal satu sama lain. Akhirnya kami memutuskan untuk membangun keluarga kecil kami pada hari Jum'at 1 Juli 2022. Semoga Allah S.W.T. memberikan kebahagiaan dan keberkahan di keluarga kami. "AMIIN."
             </p>
         </div>
 
@@ -359,17 +368,10 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
         </div>
     </div>
 
+    <script src="assets/tools.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-
-    <script>
-        function salin() {
-            document.getElementById("norek").select();
-            document.execCommand("copy");
-            alert("Nomor Rekening Berhasil Disalin Ke Clipboard.");
-        }
     </script>
 </body>
 
