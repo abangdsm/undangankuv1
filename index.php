@@ -55,8 +55,8 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
         Yah, browser Anda tidak mendukung audio.
     </audio> -->
 
-    <div class="videomus">
-        <video loop id="video1" src="assets/audio/tuluscil.mp4"></video>
+    <div class="videomus" style="display: none;">
+        <video style="display: none;" loop id="video1" src="assets/audio/tuluscil.mp4"></video>
     </div>
 
     <!-- Nama Tamu Undangan -->
