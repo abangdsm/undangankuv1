@@ -537,6 +537,32 @@ small {
     font-size: 1rem;
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#modal {
+    max-width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.content {
+    height: 100vh;
+}
+
 
 /* Tampilan Responsive Mobile */
 @media screen and (max-width: 576px) {

@@ -35,8 +35,19 @@
 
 </head>
 
-<body>
-    <p>Halo</p>
+<body onload="halo()">
+    <button id="open">Tampilkan</button>
+    <div id="overlay">
+        <div id="modal">
+            <button id="close">Buka Undangan</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>halo</p>
+    </div>
+
+    <script src="tools.js"></script>
 </body>
 
 </html>
