@@ -180,18 +180,22 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 
     <div id="profile1" data-aos="fade-up" data-aos-duration="2000">
         <img src="assets/profile-dsm.jpg" alt="dwistarmuda" class="pfl" data-aos="zoom-in" data-aos-duration="2000">
-        <p class="namanya">Dwi Star Muda Al Achmad</p>
-        <p>Putra Pertama Dari:</p>
-        <p>Bapak Achmad dan Ibu Setiawati</p>
-        <a href="https://instagram.com/dwistarmuda.id" target="_blank" class="btn-ig"><i class="fab fa-instagram"></i> instagram</a>
+        <div class="kitacuy">
+            <p class="namanya">Dwi Star Muda Al Achmad</p>
+            <p>Putra Pertama Dari:</p>
+            <p>Bapak Achmad dan Ibu Setiawati</p>
+            <a href="https://instagram.com/dwistarmuda.id" target="_blank" class="btn-ig"><i class="fab fa-instagram"></i> instagram</a>
+        </div>
     </div>
 
     <div id="profile2" data-aos="fade-up" data-aos-duration="2000">
         <img src="assets/prof2.jpg" alt="dwistarmuda" class="pfl" data-aos="zoom-in" data-aos-duration="2000">
-        <p class="namanya">Nirmala Sari</p>
-        <p>Putri Pertama Dari:</p>
-        <p>Alm. Bapak Nirwansyah dan Ibu Sulastri</p>
-        <a href="https://instagram.com/itsnirmalasari" target="_blank" class="btn-ig"><i class="fab fa-instagram"></i> instagram</a>
+        <div class="kitacuy2">
+            <p class="namanya">Nirmala Sari</p>
+            <p>Putri Pertama Dari:</p>
+            <p>Alm. Bapak Nirwansyah dan Ibu Sulastri</p>
+            <a href="https://instagram.com/itsnirmalasari" target="_blank" class="btn-ig"><i class="fab fa-instagram"></i> instagram</a>
+        </div>
     </div>
 
     <div class="garis-bawah"></div>
