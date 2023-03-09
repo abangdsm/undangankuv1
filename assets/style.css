@@ -45,6 +45,14 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
+.videomus {
+    display: none;
+}
+
+#video1 {
+    display: none;
+}
+
 .prlx1 {
     background-image: url('cover.jpg');
     background-size: cover; 

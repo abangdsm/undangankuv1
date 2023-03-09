@@ -1,3 +1,8 @@
+// document.addEventListener("DOMContentLoaded", function() {
+//     var audio = new Audio('assets/audio/tuluscil.mp3');
+//     audio.play();
+// });
+
 const popup = document.querySelector(".popup");
 const buka = document.querySelector(".buka-undangan");
 
@@ -7,7 +12,6 @@ buka.addEventListener("click", function(){
 
 const prmtr = new URLSearchParams(window.location.search);
 const namaUndangan = prmtr.get('to');
-console.log(namaUndangan);
 
 const p = document.createElement('p');
 const nodep = document.createTextNode(namaUndangan);

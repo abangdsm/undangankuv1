@@ -50,17 +50,21 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
 </head>
 
 <body>
-    <audio hidden autoplay loop>
-        <source src="assets/audio/tulus.mp3" type="audio/mpeg">
+    <!-- <audio hidden autoplay="true" loop>
+        <source src="assets/audio/tuluscil.mp3" type="audio/mpeg">
         Yah, browser Anda tidak mendukung audio.
-    </audio>
+    </audio> -->
+
+    <div class="videomus">
+        <video loop id="video1" src="assets/audio/tuluscil.mp4"></video>
+    </div>
 
     <!-- Nama Tamu Undangan -->
     <div class="popup">
         <div class="pop-content">
             <img class="halo-undangan" src="assets/1.jpg" alt="muda-mala">
             <p>Kepada Yth, Bapak/Ibu/Sdra/i</p>
-            <button class="buka-undangan">Buka Undangan</button>
+            <button onclick="playvid()" class="buka-undangan">Buka Undangan</button>
         </div>
     </div>
 
@@ -372,6 +376,22 @@ $data_ucapan = mysqli_query($conn, "SELECT * FROM tbucapan ORDER BY id DESC");
         </div>
     </div>
 
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = new Audio('assets/audio/tuluscil.mp3');
+            audio.play();
+        });
+    </script> -->
+
+    <script>
+        const myVideo = document.getElementById("video1");
+
+        function playvid() {
+            // saat buttonOnclick kita klik maka otomatis lagu langsung berjalan
+            myVideo.play();
+        }
+    </script>
     <script src="assets/tools.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
