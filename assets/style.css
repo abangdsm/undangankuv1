@@ -503,6 +503,7 @@ small {
 
 .ucapan-doa {
     margin: 15px;
+    position: relative;
 }
 
 .btn-hapus {
